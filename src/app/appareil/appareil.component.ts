@@ -9,7 +9,7 @@ import {AppareilService} from '../services/appareil.service';
 export class AppareilComponent implements OnInit {
   @Input() appareilName: string;
   @Input() appareilStatus: string;
-  @Input() indexOfappareil: number;
+  @Input() indexOfAppareil: number;
 
   constructor(private appareilService: AppareilService) {
   }
@@ -30,10 +30,10 @@ export class AppareilComponent implements OnInit {
   }
 
   onSwitchOn() {
-    this.appareilService.switchOnOne(this.indexOfappareil);
+    this.appareilService.switchOnOne(this.indexOfAppareil);
   }
 
   onSwitchOff() {
-    this.appareilService.switchOffOne(this.indexOfappareil);
+    this.appareilService.switchOffOne(this.indexOfAppareil);
   }
 }

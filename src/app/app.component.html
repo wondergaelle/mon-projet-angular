@@ -32,7 +32,7 @@
         <p> Mis à jour : {{ lastUpdate |async| date: 'short'| uppercase}}</p>
         <ul class="list-group">
           <app-appareil *ngFor="let appareil of appareils; let i = index"
-                        [indexOfappareil]="i"
+                        [indexOfAppareil]="i"
                         [appareilName]="appareil.name"
                         [appareilStatus]="appareil.status"></app-appareil>
         </ul>
