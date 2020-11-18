@@ -35,11 +35,12 @@
                         [appareilName]="appareil.name"
                         [appareilStatus]="appareil.status"></app-appareil>
         </ul>
-        <div>
+        <div class="my-5">
           <button class="btn btn-success"
+                  (click)="onAllumer()">Tout allumer</button>
+          <button class="btn btn-danger"
                   [disabled]="!isAuth"
-                  (click)="onAllumer()">Tout allumer
-          </button>
+                  (click)="onEteindre()">Tout éteindre</button>
         </div>
       </div>
     </div>
