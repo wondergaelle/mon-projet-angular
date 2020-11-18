@@ -1,0 +1,43 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  margin-top: 20px;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #428BCA;
+  color: #ffffff;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+
+
+footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
